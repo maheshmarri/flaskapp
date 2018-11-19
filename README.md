@@ -25,6 +25,10 @@ endpoints and its data.
 Configured Travis as CI/CD Pipeline for each commit on github. And also app to be built on python version 2.7 and 3.6.
 So for each commit of the 2 parallel builds running for each of the python version.
 
+Travis pipeline script also builds docker image and runs the docker container .
+
+Runs unittest cases of the application
+
 # Depndencies
 I have packaged dependencies in requirement.txt file to install dependencies using pip before the app would
 executed.
@@ -38,5 +42,16 @@ Containerized the flask app into single deployable artifact and its dependencies
 # Running Flask Docker Container
 `docker run -d -p 80:80 flaskapp`
 
+# Issues with healh end point -delay loading
+
+There is a delay in loading when we browse /health endpoint,becasue of the app is trying to point its own url and returing
+the status code . It tries to contact itself to find out the status of the app. 
+
+
 # App Sreenshots
 
+![Screenshot](default.png) 
+
+![Screenshot](health.png) 
+
+![Screenshot](metadata.png) 
