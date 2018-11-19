@@ -1,0 +1,16 @@
+language: python
+python:
+  - "2.7"
+  - "3.6"
+# command to install dependencies
+services:
+  - docker
+install:
+  - pip install -r requirements.txt
+# command to run Unit tests
+before_install:
+- docker build -t maheshmarri/flaskapp .
+- docker run -d -p 80:80 maheshmarri/flaskapp
+- docker ps -a
+script:
+  - python test.py -v
