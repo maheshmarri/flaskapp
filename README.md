@@ -1,5 +1,7 @@
 #flaskapp_myob
 
+[![Build Status](https://travis-ci.org/maheshmarri/flaskapp_myob.svg?branch=master)](https://travis-ci.org/maheshmarri/flaskapp_myob)
+
 # Intro
 This is simple flask application based on Python Flask Web framework which utilizes 
 the app routes view functions as endpoints.

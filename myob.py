@@ -19,7 +19,7 @@ def health():
 
 @app.route('/metadata')
 def metadata():
-    repo = 'maheshmarri/nodejs'
+    repo = 'maheshmarri/flaskapp_myob'
     r = requests.get('https://api.github.com/repos/{0}/commits?per_page=1'.format(repo))
     commit = r.json()[0]["sha"]
     json = {
@@ -32,8 +32,6 @@ def metadata():
         ]
     }
     return jsonify(json)
-
-
 
 if __name__ == '__main__':
     app.run(host="0.0.0.0",port=80)
