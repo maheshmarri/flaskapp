@@ -13,4 +13,4 @@ before_install:
 - docker run -d -p 80:80 maheshmarri/flaskapp
 - docker ps -a
 script:
-  - python test.py -v
+  - python unittest.py -v

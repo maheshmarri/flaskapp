@@ -1,4 +1,4 @@
-#flaskapp_myob
+# flaskapp_myob
 
 [![Build Status](https://travis-ci.org/maheshmarri/flaskapp_myob.svg?branch=master)](https://travis-ci.org/maheshmarri/flaskapp_myob)
 
@@ -22,7 +22,8 @@ endpoints and its data.
 `python test.py -v`
 
 # CI/CD 
-Travis as Pipline to do the CI for each commit on github.
+Configured Travis as CI/CD Pipeline for each commit on github. And also app to be built on python version 2.7 and 3.6.
+So for each commit of the 2 parallel builds running for each of the python version.
 
 # Depndencies
 I have packaged dependencies in requirement.txt file to install dependencies using pip before the app would
