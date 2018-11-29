@@ -1,4 +1,4 @@
-# flaskapp_myob
+# flaskapp
 
 [![Build Status](https://travis-ci.org/maheshmarri/flaskapp_myob.svg?branch=master)](https://travis-ci.org/maheshmarri/flaskapp_myob)
 
