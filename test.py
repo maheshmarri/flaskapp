@@ -39,6 +39,6 @@ class FlaskTestCase(unittest.TestCase):
         self.assertIn(b'myapplication',response.data)
         self.assertIn(b'pre-interview technical test', response.data)
 
-
+#main method
 if __name__ == '__main__':
         unittest.main()
